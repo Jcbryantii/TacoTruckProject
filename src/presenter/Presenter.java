@@ -15,7 +15,6 @@ import java.awt.event.ActionListener;
 
 public class Presenter implements ActionListener {
 
-
     private final TacoTruck view;
 
     public void activateTacoButtonListener() {
@@ -23,28 +22,19 @@ public class Presenter implements ActionListener {
                 .getTacoButton()
                 .addActionListener(this);
         ((OrderPanel) this.getCurrentScreen()).getTacoButton().setActionCommand("Add Taco");
-
     }
-
 
     private void setCurrentScreen(JPanel screen) {
-
         this.view.setContentPane(screen);
-
         view.revalidate();
-
     }
 
-
     public JFrame getView() {
-
         return this.view;
-
     }
 
 
     public Presenter(TacoTruck tacoTruck) {
-
         this.view = tacoTruck;
         setCurrentScreen(new TacoTruckWelcomePanel());
         ((TacoTruckWelcomePanel) this.getCurrentScreen())
@@ -55,9 +45,7 @@ public class Presenter implements ActionListener {
 
 
     public Container getCurrentScreen() {
-
         return view.getContentPane();
-
     }
 
     @Override
@@ -81,9 +69,7 @@ public class Presenter implements ActionListener {
     }
 
     public static void main(String[] args) {
-
         new Presenter(new model.TacoTruck());
-
     }
 
 
