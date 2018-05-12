@@ -4,7 +4,7 @@ public class Taco extends ConsumableItem{
     private boolean hasGuacamole = false;
 
     public Taco() {
-        super(3.0);
+        super(3.0, "Taco");
     }
 
     public boolean hasGuacamole() {

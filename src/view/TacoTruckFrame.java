@@ -10,7 +10,7 @@ public class TacoTruckFrame extends JFrame {
         this.setTitle("DisAint Taco Bell");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(600, 200);
-        this.setContentPane(new TacoTruckWelcomePanel());
+        this.setContentPane(new welcome());
         this.setVisible(true);
 
     }

@@ -5,7 +5,7 @@ public class Quesadilla extends ConsumableItem{
     private boolean hasMeat = false;
 
     public Quesadilla() {
-        super(5);
+        super(5, "Quesadilla");
     }
 
     public boolean hasMeat() {

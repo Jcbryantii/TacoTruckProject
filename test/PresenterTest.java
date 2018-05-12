@@ -1,12 +1,11 @@
 import model.Cashier;
 import model.Order;
-import model.Taco;
 import model.TacoTruck;
 import org.junit.Before;
 import org.junit.Test;
 import presenter.Presenter;
 import view.OrderPanel;
-import view.TacoTruckWelcomePanel;
+import view.welcome;
 
 
 import javax.swing.*;
@@ -39,7 +38,7 @@ public class PresenterTest {
 
         assertEquals(view, presenter.getView());
 
-        assertEquals("view.TacoTruckWelcomePanel", currentScreen.getName());
+        assertEquals("view.welcome", currentScreen.getName());
 
         assertEquals(currentScreen, presenter.getView().getContentPane());
 
@@ -47,20 +46,16 @@ public class PresenterTest {
 
     }
 
-/*    @Test
+   @Test
     public void testTacoOrderButtonDoesAddTacoToOrder() {
 
-        JButton startOrder = ((TacoTruckWelcomePanel) presenter.getCurrentScreen()).getStartButton();
-        startOrder.doClick();
+        presenter.setCurrentScreen(presenter.getOrderPanel());
+        presenter.addOrder(new Order("Sarah"));
+        presenter.getOrderPanel().getTacoButton().doClick();
 
-        OrderPanel orderScreen = (OrderPanel) presenter.getCurrentScreen();
-        JButton addTacoButton = orderScreen.getTacoButton();
+        assertEquals("Taco", presenter.getModel().getOrder(0).getItem(0).getItemName());
 
-        addTacoButton.doClick();
-
-        assertEquals(taco, orderScreen.getComponent(0);
-
-    }*/
+    }
 
     @Test
     public void testSetCurrentOrder(){
@@ -75,7 +70,7 @@ public class PresenterTest {
         Order james = new Order("James");
         presenter.addOrder(james);
         assertEquals(james, presenter.getCurrentOrder());
-        
+
         Order sarah = new Order("sarah");
         presenter.addOrder(sarah);
         assertEquals(sarah, presenter.getCurrentOrder());
@@ -85,7 +80,7 @@ public class PresenterTest {
     @Test
     public void testStartButtonOnClickGoesToOrderScreen () {
 
-        JButton startButton = ((TacoTruckWelcomePanel) presenter.getCurrentScreen()).getStartButton();
+        JButton startButton = ((welcome) presenter.getCurrentScreen()).getStartButton();
 
         startButton.doClick();
 

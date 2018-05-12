@@ -7,7 +7,7 @@ public abstract class Beverage extends ConsumableItem {
     private Ice iceChoice;
 
     public Beverage(double price) {
-        super(price);
+        super(price, "Drink");
     }
 
     //diet type getter

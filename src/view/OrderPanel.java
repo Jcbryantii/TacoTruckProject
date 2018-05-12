@@ -9,7 +9,7 @@ public class OrderPanel extends JPanel {
     private String customerName;
     private JButton addTacoButton;
 
-    private JTextArea provisionalOrderSummaryTextArea;
+    private JPanel orderSummaryArea;
 
     public OrderPanel(String customerName) {
         this.setName("TacoTruckOrderPanel");
@@ -18,26 +18,21 @@ public class OrderPanel extends JPanel {
         addTacoButton = new JButton("Taco");
         addTacoButton.setName("Taco");
         this.add(addTacoButton);
-        provisionalOrderSummaryTextArea = new JTextArea();
-        this.add(provisionalOrderSummaryTextArea);
+
+        orderSummaryArea = new JPanel();
+        this.add(orderSummaryArea);
     }
 
     String getCustomerName() {
         return customerName;
     }
-
-    /*public int getNumberofItems() {
-        return this.order.getNumberOfOrders();
+    public JPanel getOrderSummaryArea() {
+        return this.orderSummaryArea;
     }
 
-    public void addItemToOrder(model.Taco taco) {
-        this.order.addItem(taco);
-        System.out.println(getNumberofItems());
-        String updateString = "One " + taco.toString() + " added to order. Subtotal so far: $" + this.order.getSubtotal() + "\n";
-        provisionalOrderSummaryTextArea.append(updateString);
-    }*/
 
     public JButton getTacoButton() {
+
         return this.addTacoButton;
     }
 }

@@ -2,9 +2,10 @@ package presenter;
 
 import model.Cashier;
 import model.Order;
+import model.Taco;
 import model.TacoTruck;
 import view.OrderPanel;
-import view.TacoTruckWelcomePanel;
+import view.welcome;
 
 import javax.swing.*;
 
@@ -18,6 +19,8 @@ public class Presenter {
 
     private TacoTruck view;
     private Cashier model;
+    private view.welcome welcome = new welcome();
+    private OrderPanel orderPanel = new OrderPanel("Sarah");
 
 
 /*    public void activateTacoButtonListener() {
@@ -28,7 +31,7 @@ public class Presenter {
         return view.getContentPane();
     }
 
-    private void setCurrentScreen(JPanel screen) {
+    public void setCurrentScreen(JPanel screen) {
         this.view.setContentPane(screen);
         view.revalidate();
     }
@@ -37,11 +40,16 @@ public class Presenter {
         return this.view;
     }
 
+    public OrderPanel getOrderPanel() {
+        return orderPanel;
+    }
+
     public Presenter(TacoTruck view, Cashier model) {
         this.model = model;
         this.view = view;
-        setCurrentScreen(new TacoTruckWelcomePanel());
-        ((TacoTruckWelcomePanel) this.getCurrentScreen()).getStartButton().addActionListener(new StartButtonActonListener());
+        setCurrentScreen(welcome);
+        ((welcome) this.getCurrentScreen()).getStartButton().addActionListener(new StartButtonActonListener());
+        orderPanel.getTacoButton().addActionListener(new TacoButtonActionListener());
     }
 
 
@@ -65,32 +73,20 @@ public class Presenter {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            String customerName = ((TacoTruckWelcomePanel)getCurrentScreen()).getCustomerNameField().getText();
+            String customerName = ((view.welcome)getCurrentScreen()).getCustomerNameField().getText();
             setCurrentScreen(new OrderPanel(customerName));
             getCurrentScreen().revalidate();
-//            activateTacoButtonListener();
         }
     }
 
 
-/*    private class TacoButtonActionListener implements ActionListener {
-
-        public void addItemToOrder(model.Taco taco) {
-
-            System.out.println(getNumberofItems());
-            String updateString = "One " + taco.toString() + " added to order. Subtotal so far: $" + this.order.getSubtotal() + "\n";
-            provisionalOrderSummaryTextArea.append(updateString);
-        }
+   private class TacoButtonActionListener implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            getCurrentScreen().addItemToOrder(new Taco());
-
+            getCurrentOrder().addItem(new Taco());
         }
     }
 
-    public int getNumberofItems() {
-        return model.Order.getNumberOfOrders();
-    }*/
 
 }

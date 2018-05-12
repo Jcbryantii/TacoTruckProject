@@ -4,15 +4,15 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TacoTruckWelcomePanel extends JPanel {
+public class welcome extends JPanel {
 
 
     private JButton startButton;
     private JTextField customerNameField;
 
-    public TacoTruckWelcomePanel() {
+    public welcome() {
 
-        this.setName("view.TacoTruckWelcomePanel");
+        this.setName("view.welcome");
         JLabel customerNameLabel = new JLabel("Enter Customer Name");
         this.add(customerNameLabel);
         customerNameField = new JTextField(20);
