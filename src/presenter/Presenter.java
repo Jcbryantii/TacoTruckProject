@@ -2,7 +2,6 @@ package presenter;
 
 import model.Cashier;
 import model.Order;
-import model.Taco;
 import model.TacoTruck;
 import view.OrderPanel;
 import view.TacoTruckWelcomePanel;
@@ -54,8 +53,12 @@ public class Presenter {
         return this.model;
     }
 
-    public Order addOrder(Order order) {
-        return this.getModel().addOrder(order);
+    public void addOrder(Order order) {
+        this.getModel().addOrder(order);
+    }
+
+    public Order getCurrentOrder() {
+        return model.getOrder( model.getNumberOfOrders() - 1 );
     }
 
     private class StartButtonActonListener implements ActionListener {
@@ -87,7 +90,7 @@ public class Presenter {
     }
 
     public int getNumberofItems() {
-        return model.Order.getOrderSize();
+        return model.Order.getNumberOfOrders();
     }*/
 
 }

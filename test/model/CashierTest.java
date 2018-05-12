@@ -1,6 +1,5 @@
 package model;
 
-import model.Cashier;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,14 +20,14 @@ public class CashierTest {
         Order order2 = new Order("Coal");
         this.cashier.addOrder(order);
         this.cashier.addOrder(order2);
-        assertEquals(2, this.cashier.getOrderSize());
+        assertEquals(2, this.cashier.getNumberOfOrders());
         assertEquals(order, this.cashier.getOrder(0));
         assertEquals(order2, this.cashier.getOrder(1));
     }
 
     @Test
     public void testReturnsCorrectSizeOfOrders() {
-        assertEquals(0, cashier.getOrderSize());
+        assertEquals(0, cashier.getNumberOfOrders());
     }
 
 }

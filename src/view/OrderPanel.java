@@ -27,7 +27,7 @@ public class OrderPanel extends JPanel {
     }
 
     /*public int getNumberofItems() {
-        return this.order.getOrderSize();
+        return this.order.getNumberOfOrders();
     }
 
     public void addItemToOrder(model.Taco taco) {

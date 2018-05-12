@@ -3,7 +3,6 @@ import model.Order;
 import model.Taco;
 import model.TacoTruck;
 import org.junit.Before;
-
 import org.junit.Test;
 import presenter.Presenter;
 import view.OrderPanel;
@@ -24,7 +23,6 @@ public class PresenterTest {
 
 
     @Before
-
     public void setUp() {
         view = new TacoTruck();
 
@@ -35,7 +33,6 @@ public class PresenterTest {
     }
 
     @Test
-
     public void testPresenterInitializesWithStartScree() {
 
         Container currentScreen = presenter.getCurrentScreen();
@@ -71,12 +68,17 @@ public class PresenterTest {
         presenter.addOrder(order);
 
         assertEquals(order, presenter.getModel().getOrder(0));
-
     }
 
     @Test
-    public void testGetCurrentOrder(){
-
+    public void testGetCurrentOrder(){ ;
+        Order james = new Order("James");
+        presenter.addOrder(james);
+        assertEquals(james, presenter.getCurrentOrder());
+        
+        Order sarah = new Order("sarah");
+        presenter.addOrder(sarah);
+        assertEquals(sarah, presenter.getCurrentOrder());
     }
 
 
@@ -88,7 +90,6 @@ public class PresenterTest {
         startButton.doClick();
 
         assertEquals("TacoTruckOrderPanel", presenter.getCurrentScreen().getName());
-
     }
 
 
