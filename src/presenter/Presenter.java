@@ -13,14 +13,14 @@ import java.awt.event.ActionEvent;
 
 import java.awt.event.ActionListener;
 
-public class Presenter implements ActionListener {
+public class Presenter {
 
     private final TacoTruck view;
 
     public void activateTacoButtonListener() {
         ((OrderPanel) this.getCurrentScreen())
                 .getTacoButton()
-                .addActionListener(this);
+                .addActionListener(new TacoButtonActionListener());
         ((OrderPanel) this.getCurrentScreen()).getTacoButton().setActionCommand("Add Taco");
     }
 
@@ -39,7 +39,7 @@ public class Presenter implements ActionListener {
         setCurrentScreen(new TacoTruckWelcomePanel());
         ((TacoTruckWelcomePanel) this.getCurrentScreen())
                 .getStartButton()
-                .addActionListener(this);
+                .addActionListener(new StartButtonActonListener());
         ((TacoTruckWelcomePanel) this.getCurrentScreen()).getStartButton().setActionCommand("Start Order");
     }
 
@@ -48,30 +48,29 @@ public class Presenter implements ActionListener {
         return view.getContentPane();
     }
 
-    @Override
-    public void actionPerformed(ActionEvent actionEvente) {
-        String actionCommand = actionEvente.getActionCommand();
-        switch(actionCommand) {
-            case "Start Order":
-                String customerName = ((TacoTruckWelcomePanel)getCurrentScreen()).getCustomerNameField().getText();
-                setCurrentScreen(new OrderPanel(customerName));
-                getCurrentScreen().revalidate();
-                activateTacoButtonListener();
-                System.out.println("start order button has been clicked");
-                break;
-            case "Add Taco":
-                ((OrderPanel) this.getCurrentScreen()).addItemToOrder(new Taco());
-                System.out.println("add taco button has been clicked");
-                break;
-            default:
-                System.err.println("Command not recognized");
-        }
-    }
 
     public static void main(String[] args) {
         new Presenter(new model.TacoTruck());
     }
 
+    private class StartButtonActonListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String customerName = ((TacoTruckWelcomePanel)getCurrentScreen()).getCustomerNameField().getText();
+            setCurrentScreen(new OrderPanel(customerName));
+            getCurrentScreen().revalidate();
+            activateTacoButtonListener();
+        }
+    }
 
 
+    private class TacoButtonActionListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            ((OrderPanel) getCurrentScreen()).addItemToOrder(new Taco());
+
+        }
+    }
 }

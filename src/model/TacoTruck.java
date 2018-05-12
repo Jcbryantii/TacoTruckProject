@@ -9,7 +9,7 @@ public class TacoTruck extends JFrame {
     public TacoTruck() {
 
         this.setName("TacoTruckFrame");
-        this.setTitle("DisAint model.Taco Bell");
+        this.setTitle("Rolling Taco");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(600, 200);
         this.setContentPane(new TacoTruckWelcomePanel());

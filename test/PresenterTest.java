@@ -21,9 +21,7 @@ import static org.junit.Assert.*;
 public class PresenterTest {
 
 
-
     Presenter presenter;
-
 
 
     @Before
