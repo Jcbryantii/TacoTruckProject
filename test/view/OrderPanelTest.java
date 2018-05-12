@@ -1,5 +1,6 @@
 package view;
 
+import model.Cashier;
 import model.TacoTruck;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,15 +32,6 @@ public class OrderPanelTest {
     public void testOrderHasAddTacoButton() {
 
         assertEquals("Taco", ((JButton) orderPanel.getComponents()[1]).getName());
-    }
-
-    @Test
-    public void testTacoOrderButtonDoesAddTacoToOrder() {
-        presenter.Presenter pres = new presenter.Presenter(new TacoTruck());
-        ((TacoTruckWelcomePanel) pres.getCurrentScreen()).getStartButton().doClick();
-        JButton addTacoButton = (JButton) ((OrderPanel) pres.getCurrentScreen()).getTacoButton();
-        ((OrderPanel) pres.getCurrentScreen()).getTacoButton().doClick();
-        assertEquals(1, ((OrderPanel) pres.getCurrentScreen()).getNumberofItems());
     }
 
 

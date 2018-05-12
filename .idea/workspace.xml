@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="833c155e-e82a-4cb7-8a3e-b804f7183638" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/test/model/CashierTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/TacoTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/TacoTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Taco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presenter/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/OrderPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/OrderPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/PresenterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PresenterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/view/OrderPanelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/view/OrderPanelTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,64 +20,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Presenter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Presenter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/presenter/Presenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="174">
+              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
                 <element signature="e#752#753#0" expanded="true" />
                 <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-                <element signature="e#1252#1253#0" expanded="true" />
                 <element signature="e#2180#2181#0" expanded="true" />
                 <element signature="e#2232#2233#0" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1330#1331#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PresenterTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PresenterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/PresenterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-485">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TacoTruckWelcomePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/TacoTruckWelcomePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TacoTruckWelcomePanelTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/view/TacoTruckWelcomePanelTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TacoTruck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/TacoTruck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderPanelTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/view/OrderPanelTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="240">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,16 +53,59 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cashier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Cashier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CashierTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/model/CashierTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/OrderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-679">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="OrderPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/OrderPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="84">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,9 +113,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/view/OrderPanel.java" />
         <option value="$PROJECT_DIR$/src/model/TacoTruck.java" />
+        <option value="$PROJECT_DIR$/test/view/OrderPanelTest.java" />
+        <option value="$PROJECT_DIR$/src/model/Taco.java" />
+        <option value="$PROJECT_DIR$/test/model/CashierTest.java" />
         <option value="$PROJECT_DIR$/test/PresenterTest.java" />
+        <option value="$PROJECT_DIR$/src/model/Cashier.java" />
+        <option value="$PROJECT_DIR$/src/view/OrderPanel.java" />
         <option value="$PROJECT_DIR$/src/presenter/Presenter.java" />
       </list>
     </option>
@@ -179,10 +198,20 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Presenter">
+  <component name="RunManager" selected="JUnit.PresenterTest.testSetCurrentOrder">
     <configuration name="Presenter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="presenter.Presenter" />
       <module name="TacoTruck" />
@@ -219,6 +248,57 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PresenterTest.testPresenterInitializesWithStartScree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TacoTruck" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PresenterTest" />
+      <option name="METHOD_NAME" value="testPresenterInitializesWithStartScree" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PresenterTest.testSetCurrentOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TacoTruck" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PresenterTest" />
+      <option name="METHOD_NAME" value="testSetCurrentOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PresenterTest.testTacoOrderButtonDoesAddTacoToOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TacoTruck" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PresenterTest" />
+      <option name="METHOD_NAME" value="testTacoOrderButtonDoesAddTacoToOrder" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -269,9 +349,15 @@
     <list>
       <item itemvalue="Application.Presenter" />
       <item itemvalue="JUnit.All in TacoTruck" />
+      <item itemvalue="JUnit.PresenterTest.testPresenterInitializesWithStartScree" />
+      <item itemvalue="JUnit.PresenterTest.testTacoOrderButtonDoesAddTacoToOrder" />
+      <item itemvalue="JUnit.PresenterTest.testSetCurrentOrder" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PresenterTest.testSetCurrentOrder" />
+        <item itemvalue="JUnit.PresenterTest.testTacoOrderButtonDoesAddTacoToOrder" />
+        <item itemvalue="JUnit.PresenterTest.testPresenterInitializesWithStartScree" />
         <item itemvalue="Application.Presenter" />
         <item itemvalue="JUnit.All in TacoTruck" />
       </list>
@@ -287,7 +373,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525741262777</updated>
-      <workItem from="1526135444400" duration="3093000" />
+      <workItem from="1526135444400" duration="9903000" />
     </task>
     <servers />
   </component>
@@ -295,9 +381,36 @@
     <history-entry file="All_in_TacoTruck - 2018.05.08 at 00h 33m 47s.xml">
       <configuration name="All in TacoTruck" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PresenterTest_testPresenterInitializesWithStartScree - 2018.05.12 at 11h 55m 12s.xml">
+      <configuration name="PresenterTest.testPresenterInitializesWithStartScree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PresenterTest_testPresenterInitializesWithStartScree - 2018.05.12 at 11h 58m 21s.xml">
+      <configuration name="PresenterTest.testPresenterInitializesWithStartScree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PresenterTest_testPresenterInitializesWithStartScree - 2018.05.12 at 12h 00m 38s.xml">
+      <configuration name="PresenterTest.testPresenterInitializesWithStartScree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PresenterTest_testPresenterInitializesWithStartScree - 2018.05.12 at 12h 00m 54s.xml">
+      <configuration name="PresenterTest.testPresenterInitializesWithStartScree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PresenterTest_testPresenterInitializesWithStartScree - 2018.05.12 at 12h 03m 57s.xml">
+      <configuration name="PresenterTest.testPresenterInitializesWithStartScree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PresenterTest_testPresenterInitializesWithStartScree - 2018.05.12 at 12h 07m 44s.xml">
+      <configuration name="PresenterTest.testPresenterInitializesWithStartScree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PresenterTest_testTacoOrderButtonDoesAddTacoToOrder - 2018.05.12 at 12h 11m 14s.xml">
+      <configuration name="PresenterTest.testTacoOrderButtonDoesAddTacoToOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PresenterTest_testSetCurrentOrder - 2018.05.12 at 14h 06m 48s.xml">
+      <configuration name="PresenterTest.testSetCurrentOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PresenterTest_testSetCurrentOrder - 2018.05.12 at 14h 12m 11s.xml">
+      <configuration name="PresenterTest.testSetCurrentOrder" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3093000" />
+    <option name="totallyTimeSpent" value="9903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1610" height="950" extended-state="0" />
@@ -312,18 +425,18 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28767124" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13850932" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13850932" />
       <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39954337" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -339,18 +452,27 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/presenter/Presenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1083">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
             <element signature="e#752#753#0" expanded="true" />
             <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
             <element signature="e#2180#2181#0" expanded="true" />
             <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -379,23 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/view/OrderPanelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/view/TacoTruckWelcomePanelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/TacoTruckWelcomePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -403,31 +508,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/PresenterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/model/ConsumableItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-485">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="76">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Taco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/view/TacoTruckWelcomePanelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/OrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-679">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/CashierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Cashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/view/OrderPanelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/OrderPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="84">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/presenter/Presenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="174">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
             <element signature="e#752#753#0" expanded="true" />
             <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
             <element signature="e#2180#2181#0" expanded="true" />
             <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/PresenterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

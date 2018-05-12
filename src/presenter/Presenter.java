@@ -1,5 +1,7 @@
 package presenter;
 
+import model.Cashier;
+import model.Order;
 import model.Taco;
 import model.TacoTruck;
 import view.OrderPanel;
@@ -15,13 +17,16 @@ import java.awt.event.ActionListener;
 
 public class Presenter {
 
-    private final TacoTruck view;
+    private TacoTruck view;
+    private Cashier model;
 
-    public void activateTacoButtonListener() {
-        ((OrderPanel) this.getCurrentScreen())
-                .getTacoButton()
-                .addActionListener(new TacoButtonActionListener());
-        ((OrderPanel) this.getCurrentScreen()).getTacoButton().setActionCommand("Add Taco");
+
+/*    public void activateTacoButtonListener() {
+        ((OrderPanel) this.getCurrentScreen()).getTacoButton().addActionListener(new TacoButtonActionListener());
+    }*/
+
+    public Container getCurrentScreen() {
+        return view.getContentPane();
     }
 
     private void setCurrentScreen(JPanel screen) {
@@ -33,24 +38,24 @@ public class Presenter {
         return this.view;
     }
 
-
-    public Presenter(TacoTruck tacoTruck) {
-        this.view = tacoTruck;
+    public Presenter(TacoTruck view, Cashier model) {
+        this.model = model;
+        this.view = view;
         setCurrentScreen(new TacoTruckWelcomePanel());
-        ((TacoTruckWelcomePanel) this.getCurrentScreen())
-                .getStartButton()
-                .addActionListener(new StartButtonActonListener());
-        ((TacoTruckWelcomePanel) this.getCurrentScreen()).getStartButton().setActionCommand("Start Order");
-    }
-
-
-    public Container getCurrentScreen() {
-        return view.getContentPane();
+        ((TacoTruckWelcomePanel) this.getCurrentScreen()).getStartButton().addActionListener(new StartButtonActonListener());
     }
 
 
     public static void main(String[] args) {
-        new Presenter(new model.TacoTruck());
+        new Presenter(new model.TacoTruck(), new Cashier());
+    }
+
+    public Cashier getModel() {
+        return this.model;
+    }
+
+    public Order addOrder(Order order) {
+        return this.getModel().addOrder(order);
     }
 
     private class StartButtonActonListener implements ActionListener {
@@ -60,17 +65,29 @@ public class Presenter {
             String customerName = ((TacoTruckWelcomePanel)getCurrentScreen()).getCustomerNameField().getText();
             setCurrentScreen(new OrderPanel(customerName));
             getCurrentScreen().revalidate();
-            activateTacoButtonListener();
+//            activateTacoButtonListener();
         }
     }
 
 
-    private class TacoButtonActionListener implements ActionListener {
+/*    private class TacoButtonActionListener implements ActionListener {
+
+        public void addItemToOrder(model.Taco taco) {
+
+            System.out.println(getNumberofItems());
+            String updateString = "One " + taco.toString() + " added to order. Subtotal so far: $" + this.order.getSubtotal() + "\n";
+            provisionalOrderSummaryTextArea.append(updateString);
+        }
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            ((OrderPanel) getCurrentScreen()).addItemToOrder(new Taco());
+            getCurrentScreen().addItemToOrder(new Taco());
 
         }
     }
+
+    public int getNumberofItems() {
+        return model.Order.getOrderSize();
+    }*/
+
 }

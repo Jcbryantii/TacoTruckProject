@@ -7,7 +7,6 @@ public class Taco extends ConsumableItem{
         super(3.0);
     }
 
-
     public boolean hasGuacamole() {
         return this.hasGuacamole;
     }
